@@ -10,7 +10,7 @@ class Pattern(object):
     NOT_EXIST = 0
     WRONG_PLACE = 1
     CORRECT = 2
-    def __init__(self,word):
+    def __init__(self,word=''):
         self.word = word
         
     def get_pattern(self,target):
@@ -50,6 +50,9 @@ class Pattern(object):
             if idx == int('22222',3):
                 return True
         return False
+    
+    def from_raw(self,pattern_raw):
+        self.pattern = [int(_) for _ in pattern_raw]
     
 class DataSet(object):
     def __init__(self,path = FREQ_MAP):

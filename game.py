@@ -1,6 +1,6 @@
 from BotUtil import WordleBot, Pattern, DataSet
 from getpass import getpass
-
+import sys
 class Game:
     def __init__(self):
         self.dataset = DataSet()
@@ -47,5 +47,24 @@ def main():
             print("Correct!")
             break
         # game.show_pattern(pattern)
-    
-main()
+
+def interactive():
+    print("Not Exist = 0\nWrong Place = 1\nCorrect = 2\n")
+    game = Game()
+    bot = WordleBot()
+    first_round=True
+    pattern = None
+    while True:
+        candidates = bot.next(pattern = pattern,first_round=first_round)
+        first_round = False
+        print(list(candidates.items())[:10])
+        word = game.get_next_guess()
+        pattern = Pattern(word)
+        pattern.from_raw(input("input pattern result(e.g. 12100): "))
+        # game.show_pattern(pattern)
+
+if __name__ == '__main__':
+    if '-i' in sys.argv or '--interactive' in sys.argv:
+        interactive()
+    else:
+        main()
