@@ -10,8 +10,8 @@ I implemented my own version as coding practice.
 
 ### usage
 ```
-git clone xx@xx
-cd xx
+git clone https://github.com/blabla-my/WordleBot.git
+cd WordleBot
 python3 -m pip install -r requirements.txt
 python3 game.py
 ```
