@@ -1,6 +1,7 @@
 # WordleBot
 
 Algorithm to solve the wordle game.
+
 About wordle game: https://www.nytimes.com/games/wordle/index.html
 
 ### Algorithm
