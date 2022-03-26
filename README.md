@@ -29,6 +29,6 @@ python3 game.py --interactive
 
 You can input a string of number to represent the pattern. For example:
 
-Black Black Yellow Green Black == 00120
+`Black Black Yellow Green Black == 00120`
 
 Have fun playing with my wordlebot (^ ^)!
