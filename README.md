@@ -5,7 +5,7 @@ Algorithm to solve the wordle game.
 About wordle game: https://www.nytimes.com/games/wordle/index.html
 
 ### Algorithm
-From 3Blue1Black's idea of entropy:
+From 3Blue1Brown's idea of entropy:
 
 https://www.youtube.com/watch?v=v68zYyaEmEA
 
